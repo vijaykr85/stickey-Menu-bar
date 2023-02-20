@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: #5f9ea0;
+        }
+        #menu-bar li{
+            display:inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+        }
+        #nature{
+            color:#5f9ea0 ;
+            font-size: 50px;
+        }
+        #about{
+            width: 100%;
+        }
+        #txt{
+            font-size: 18px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .sticky{
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ228BhXX_yVLqKsb4rBlCX6xozpO0f5R57jw&usqp=CAU" alt="nature logo">
+    </div>
+    <nav id="menu-bar" class="sticky">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+
+    </nav>
+
+    <div id="container">
+        <h1 id="nature">About us</h1>
+        <img id="about" src="https://blog.playstation.com/tachyon/2022/07/dff5cb716e87a6ef24b81bfcc811766d58f4f467.png?resize=1088%2C612&crop_strategy=smart&zoom=1.5" alt="Last">
+        <p id="txt"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, omnis! Earum itaque eligendi maiores ea? Officia minus accusantium, ducimus sit quasi esse dicta ex aperiam distinctio sunt voluptatibus praesentium libero cum ratione, velit corporis vel neque dolor modi reprehenderit saepe eos quo similique? Eveniet consequatur nisi expedita qui non? Provident dolor molestias, corporis doloremque soluta autem! Quo ipsum nesciunt architecto earum perspiciatis temporibus fugiat. Cumque nemo earum tempora dignissimos alias possimus, qui inventore, dicta quae blanditiis, hic sed? Nobis repellat assumenda aspernatur distinctio explicabo quidem quo officia labore eius modi? At incidunt nobis amet expedita consequatur vel, unde placeat pariatur distinctio qui dolore sapiente, possimus aliquam odit dolores architecto reiciendis numquam quo natus tempora aliquid molestias adipisci? Assumenda ducimus atque ut deserunt doloribus explicabo! Libero hic at accusantium itaque cum aut? Sed ad earum tenetur totam saepe est delectus, repudiandae fugiat molestias ducimus adipisci ullam quas quam excepturi repellat quod accusantium. Ipsam dolor ratione dignissimos ad impedit minus repellendus natus pariatur excepturi atque a totam perspiciatis provident nulla corporis hic quidem assumenda labore laudantium ab, reprehenderit eaque! Dolor veniam iste quisquam ipsum dolorem odit iusto, harum amet pariatur facere delectus nobis quis in commodi voluptate atque reprehenderit et blanditiis sunt! Quia dolorum eos impedit fugiat, eaque harum voluptatibus accusantium ipsum enim iure iusto ipsam fugit nam vitae est sunt quas cumque vel! Fugit, voluptate laborum consequuntur ipsam iusto eveniet unde! Illo mollitia repudiandae facere voluptatem illum quis odio consequuntur sed natus harum magnam nobis similique alias aperiam ipsum ab omnis voluptas deleniti veniam, vero eveniet, maiores voluptatibus iure? Officiis suscipit vitae odit voluptas aut modi enim assumenda! Ipsa, error. Eius minima qui eaque adipisci dignissimos blanditiis magni voluptas quisquam odio, quae magnam harum sunt modi ex, explicabo nihil laborum facilis enim iste ipsum unde? Enim in dignissimos autem voluptates est ex, aspernatur magnam consequatur suscipit dolore, cupiditate nulla necessitatibus asperiores, maxime incidunt inventore expedita deleniti voluptatum. Fuga autem cum distinctio saepe voluptas adipisci excepturi laboriosam non temporibus vitae, obcaecati fugiat unde natus asperiores, mollitia quas? Et temporibus distinctio modi! Reprehenderit rem voluptates a quaerat totam praesentium porro id nam explicabo ducimus fugit sint qui distinctio harum, doloremque illo. Quisquam soluta illo aut aperiam suscipit quam, veritatis excepturi laudantium porro distinctio voluptas ex praesentium beatae, quod eius atque consectetur! Nisi sed porro ipsam excepturi, voluptate explicabo perferendis incidunt facilis, veniam repellendus minima veritatis eos obcaecati sequi iste rerum in alias laboriosam deleniti vitae ipsa tempora accusamus. In tempore sequi quas quibusdam hic minima nostrum iusto non debitis neque modi veritatis facere, ex quod ab fuga necessitatibus exercitationem adipisci ipsam minus libero eius numquam, maxime eaque. Aut voluptatem deserunt neque ut animi voluptate atque, voluptas itaque placeat dicta similique ab vel numquam, odio voluptatibus quam molestias quis deleniti cupiditate! Error, facere, quam quos dolore repudiandae expedita voluptate labore molestiae voluptates aperiam quibusdam architecto delectus minus tempora laboriosam repellendus quasi recusandae at? Sit quis iure sint itaque quia non, repellendus aliquid aut excepturi corporis, numquam quaerat, saepe quasi quibusdam. Dolor corrupti reiciendis totam.
+        </p>
+
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar = document.getElementById("menu-bar");
+
+            if(window.pageYOffset>=140){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        })
+    </script>
+</body>
+</html>
